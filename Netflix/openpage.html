@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Open Movie Page - Netflix</title>
+</head>
+<body>
+    <div class="container my-5">
+        <button class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Movie</button>
+    </div>
+    <div id="id01" class="modal">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content animate">
+                <div class="modal-body p-0 position-relative">
+                    <img src="allofus.jpeg" alt="Avatar" class="img-fluid w-100">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 close-btn" onclick="document.getElementById('id01').style.display='none'"></button>
+                    <div class="text-overlay">
+                        <h2 class="text-overlay-text">All of Us Are Dead</h2>
+                    </div>
+                </div>
+                <div class="p-3">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <span class="badge bg-success">95% match</span>
+                            <span>2022</span>
+                            <span class="badge bg-secondary">18+</span>
+                            <span>1 Season</span>
+                            <span>HD</span>
+                            <span>5.1</span>
+                        </div>
+                       
+                    </div>
+                    <p class="mt-2 mb-0">S1:E9 Episode 9</p>
+                    <div class="progress mt-2" style="height: 6px;">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 38%;" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"></div> 
+                    </div>
+                    
+                    <p class="mt-2">A disturbance at the camp shifts the military's understanding of the virus. A thunderstorm provides cover as the group agrees to keep on moving.</p>
+                    <p>Cast:Park Ji-hu, Yoon Chan-young, Cho Yi-hyun</p>
+                    <p>Creators: Lee JQ, Chun Sung-il, Kim Nam-su</p>
+                    <div>
+                        <button class="btn btn-light btn-sm">+ My List</button>
+                        <button class="btn btn-light btn-sm">Rate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
