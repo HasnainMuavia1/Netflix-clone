@@ -1,0 +1,185 @@
+body {
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .container {
+    margin-top: 150px;
+    max-width: 500px;
+    text-align: center;
+    width: 100%; /* Changed from vh to % */
+  }
+  
+  .btn-link {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-left: 70%;
+  }
+  
+  .step-info {
+    margin: 20px 0;
+  }
+  
+  .device-icons img {
+    width: 350px; /* Increase image size */
+    margin: 0 10px;
+    border: #e50914;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .btn-next {
+    background-color: #e50914;
+    color: black;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    width: 80%;
+    height: 50px;
+  }
+  
+  .btn-next:hover {
+    background-color: #f6121d;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  hr {
+    border: 1px solid #d3d3d3; /* Light grey color */
+    margin: 0;
+    margin-bottom: 5px; /* Margin below hr */
+  }
+  
+  footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    padding: 60px 0;
+    margin-top: 120px;
+  }
+  
+  footer p {
+    margin: 0 0 10px 0;
+  }
+  
+  .footer-links {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 20px;
+  }
+  
+  .footer-links a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-col {
+    flex: 1;
+    min-width: 100px;
+    max-width: 150px;
+  }
+  
+  .questions {
+    padding: 34px 0;
+    text-align: left;
+  }
+  
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+    padding: 0 15px;
+  }
+  
+  .footer-item {
+    flex: 1;
+    min-width: 150px;
+  }
+  
+  .footer-item a {
+    display: flex;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .form-control {
+    width: 75%;
+    height: 30px; /* Same height as button */
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  
+  /* Navbar Responsive Styles */
+  .navbar-brand img {
+    margin-left: 5%;
+    margin-top: 2%;
+    width: 170px;
+  }
+  
+  .btn-link.btn-dark {
+    color: black; /* Changed to white */
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .btn-link.btn-dark:hover {
+    color: black; /* Light grey on hover */
+    text-decoration: none; /* Remove underline on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .container-fluid {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .navbar-brand img {
+      margin-left: 2%;
+      margin-top: 1%;
+      width: 150px;
+    }
+  
+    .btn-link.btn-dark {
+      margin-right: 20px;
+      font-size: 18px; /* Adjust font size for smaller screens */
+    }
+  
+    .btn-link {
+      margin-left: auto; /* Ensure the button is aligned properly on smaller screens */
+    }
+  }
+  

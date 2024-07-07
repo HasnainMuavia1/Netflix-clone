@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix - Finish Setting Up Your Account</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="accounts_setting.css" rel="stylesheet">
+  <link href="plans.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Custom CSS for Main Content and Main Block */
+    .main-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .row {
+      display: flex;
+      justify-content: center;
+    }
+    .col-md-3 {
+      flex: 1;
+      min-width: 280px;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      position: relative; /* Ensure relative positioning for absolutely positioned elements */
+    }
+    .panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden; /* Prevent content overflow */
+    }
+    .panel-heading {
+      padding: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .premium-heading {
+      background-color: #e50914;
+      color: white;
+    }
+    .standard-heading {
+      background-color: #222;
+      color: white;
+    }
+    .basic-heading {
+      background-color: #333;
+      color: white;
+    }
+    .mobile-heading {
+      background-color: #444;
+      color: white;
+    }
+    .panel-body {
+      padding: 20px;
+      flex: 1;
+    }
+    .list-unstyled {
+      padding-left: 0;
+      list-style: none;
+    }
+    .list-unstyled li {
+      padding: 5px 0;
+      font-size: 14px;
+    }
+    .btn-next {
+      background-color: #e50914;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    .btn-next:hover {
+      background-color: #d40813;
+    }
+    .ok-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      color: #e509;
+      display: none; /* Initially hide the "ok" icon */
+    }
+    /* Remove border on hover */
+    .col-md-3:hover .panel {
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="log.png" alt="Netflix Logo" class="d-inline-block align-text-top ms-0" style="margin-left: 5%; margin-top: 2%; width: 170px;">
+      </a>
+      <a class="btn btn-link btn-dark ms-auto" href="index.html">Sign Out</a>
+    </div>
+  </nav>
+  <hr>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3" onclick="selectPlan(this)">
+            <div class="panel-heading premium-heading">Most Popular</div>
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3 class="text-center" style="background-color: #e509;">Premium</h3>
+              <h4 class="text-center">4K + HDR</h4>
+              <p class="text-center">Monthly price</p>
+              <h3 class="text-center">Rs 1,100</h3>
+              <ul class="list-unstyled">
+                <li>Video and sound quality: Best</li>
+                <li>Resolution: 4K (Ultra HD) + HDR</li>
+                <li>Spatial audio (immersive sound): Included</li>
+                <li>Supported devices: TV, computer, mobile phone, tablet</li>
+                <li>Devices your household can watch at the same time: 4</li>
+                <li>Download devices: 4</li>
+              </ul>
+              <i class="fas fa-check-circle ok-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" onclick="selectPlan(this)">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3 class="text-center">Standard</h3>
+              <h4 class="text-center">1080p</h4>
+              <p class="text-center">Monthly price</p>
+              <h3 class="text-center">Rs 800</h3>
+              <ul class="list-unstyled">
+                <li>Video and sound quality: Great</li>
+                <li>Resolution: 1080p (Full HD)</li>
+                <li>Supported devices: TV, computer, mobile phone, tablet</li>
+                <li>Devices your household can watch at the same time: 2</li>
+                <li>Download devices: 2</li>
+              </ul>
+              <i class="fas fa-check-circle ok-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" onclick="selectPlan(this)">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3 class="text-center">Basic</h3>
+              <h4 class="text-center">720p</h4>
+              <p class="text-center">Monthly price</p>
+              <h3 class="text-center">Rs 450</h3>
+              <ul class="list-unstyled">
+                <li>Video and sound quality: Good</li>
+                <li>Resolution: 720p (HD)</li>
+                <li>Supported devices: TV, computer, mobile phone, tablet</li>
+                <li>Devices your household can watch at the same time: 1</li>
+                <li>Download devices: 1</li>
+              </ul>
+              <i class="fas fa-check-circle ok-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" onclick="selectPlan(this)">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3 class="text-center">Mobile</h3>
+              <h4 class="text-center">480p</h4>
+              <p class="text-center">Monthly price</p>
+              <h3 class="text-center">Rs 250</h3>
+              <ul class="list-unstyled">
+                <li>Video and sound quality: Fair</li>
+                <li>Resolution: 480p</li>
+                <li>Supported devices: Mobile phone, tablet</li>
+                <li>Devices your household can watch at the same time: 1</li>
+                <li>Download devices: 1</li>
+              </ul>
+              <i class="fas fa-check-circle ok-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-next">Next</button>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="questions">
+        Questions? Contact us.
+    </div>
+    <div class="footer">
+        <div class="footer-item">
+            <a href="#">FAQ</a>
+            <a href="#">Privacy</a>
+        </div>
+        <div class="footer-item">
+            <a href="#">Help Center</a>
+            <a href="#">Cookie Preferences</a>
+        </div>
+        <div class="footer-item">
+            <a href="#">Netflix Shop</a>
+            <a href="#">Corporate Information</a>
+        </div>
+        <div class="footer-item">
+            <a href="#">Terms of Use</a>
+        </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    function selectPlan(element) {
+      var panels = document.getElementsByClassName('col-md-3');
+      for (var i = 0; i < panels.length; i++) {
+        panels[i].classList.remove('selected');
+        panels[i].querySelector('.ok-icon').style.display = 'none'; // Hide all "ok" icons
+      }
+      element.classList.add('selected');
+      element.querySelector('.ok-icon').style.display = 'block'; // Show "ok" icon for the selected plan
+    }
+  </script>
+</body>
+</html>
