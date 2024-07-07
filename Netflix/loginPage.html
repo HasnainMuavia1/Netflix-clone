@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
 
@@ -7,95 +6,111 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/netflix-clone/Netflix/style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <script src="javaScript.js"></script>
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
   <title>Login</title>
-  
-</head>
 
+</head>
+<style>
+
+</style>
 <body>
   <div class="main1">
     <nav>
-        <span><img width="53" src="/netflix-clone/Netflix/logo.svg" alt=""></span>
-        
-    </nav>
-  <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-    <section class="login-box">
-      <h2 class="text-start text-white " style="font-weight: 700;">Sign In</h2>
-      <form class="mt-4">
-        <div class="form-floating mb-3 ">
-          <input type="email" class="form-control custom-input p-2 bg-dark" id="floatingInputGrid" placeholder="name@example.com" >
-          <label for="floatingInputGrid" class="text-secondary">Email or Mobile number</label>
-        </div>
-        <div class="form-floating mb-3">
-          <input type="password" class="form-control custom-input bg-dark" id="floatingPassword" placeholder="Password">
-          <label for="floatingInputGrid" class="text-secondary">Password</label>
-        </div>
-        <button type="submit" class="btn btn-danger red-btn w-100"><a href="landing.html" style="text-decoration: none; color: white; width: 100%;">Sign In</a></button>
-        <center class="mt-3 mb-3 text-secondary">OR</center>
-        <button type="submit" class="btn btn-dark grey-button p-2 w-100">Use as Sign-In code</button> <br>
-        <div class="mb-3 form-check mt-3">
-         
-          <input type="checkbox" class="form-check-input" id="rememberCheck">
-          <label class="form-check-label text-white" for="rememberCheck">Remember Me</label>
-        </div>
+      <span><img width="53" src="/netflix-clone/Netflix/logo.svg" alt=""></span>
 
-        <div class="mt-3 d-flex align-items-center">
-          <img width="20px" src="./images/fb.png" alt="Facebook icon">
-          <p class="m-0 ms-2 small-text text-white">Login with Facebook</p>
-        </div>
-        <div class="mt-3 text-center">
-          <p class="m-0 text-white">New to Netflix? <a href="#">Sign up now.</a></p>
-          <p class="m-0 small-text text-white mt-2">This page is protected by Google reCAPTCHA to ensure you're not
-            a bot.
-            <a href="#">Learn more.</a>
-          </p>
-        </div>
-      </form>
-    </section>
+    </nav>
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+      <section class="login-box">
+        <h2 class="text-start text-white " style="font-weight: 700;">Sign In</h2>
+        <form class="mt-4">
+          <div class="form-floating mb-3 ">
+            <input type="email" class="form-control custom-input bg-dark text-white" id="floatingInputGrid"
+              placeholder="name@example.com">
+            <label for="floatingInputGrid" class="text-secondary">Email or Mobile number</label>
+            <span  id="error1" class="error-message d-block mt-2"></span>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control custom-input bg-dark text-white" id="floatingPassword"
+              placeholder="Password">
+            <label for="floatingInputGrid" class="text-secondary">Password</label>
+            <span class="d-block mt-2" id="error2" class="error-message"></span>
+          </div>
+          <button type="submit" class="btn btn-danger red-btn w-100"><a href="landing.html"
+              style="text-decoration: none; color: white; width: 100%;">Sign In</a></button>
+          <center class="mt-3 mb-3 text-secondary">OR</center>
+          <button type="submit" class="btn btn-dark grey-button p-2 w-100">Use as Sign-In code</button> <br>
+          <div class="mb-3 form-check mt-3">
+
+            <input type="checkbox" class="form-check-input" id="rememberCheck">
+            <label class="form-check-label text-white" for="rememberCheck">Remember Me</label>
+          </div>
+
+          <div class="mt-3 d-flex align-items-center">
+            <img width="20px" src="./images/fb.png" alt="Facebook icon">
+            <p class="m-0 ms-2 small-text text-white">Login with Facebook</p>
+          </div>
+          <div class="mt-3 text-center">
+            <p class="m-0 text-white">New to Netflix? <a href="#">Sign up now.</a></p>
+            <p class="m-0 small-text text-white mt-2">This page is protected by Google reCAPTCHA to ensure you're not
+              a bot.
+              <a href="#">Learn more.</a>
+              
+            </p>
+          </div>
+        </form>
+       
+      </section>
+    </div>
+
   </div>
-  
-  </div>
-  <footer>
+  <footer style="margin-top: 4%;">
     <div class="questions">
-        Questions? Call 000-800-919-1694
+      Questions? Call 000-800-919-1694
     </div>
     <div class="footer">
-        <div class="footer-item"> 
-            <a href="faq">Investor Relations</a>
-            <a href="faq">Jobs</a>
-            <a href="faq">Ways to Watch</a>
-            <a href="faq">Terms of Use</a>
-        </div>
+      <div class="footer-item">
+        <a href="faq">Investor Relations</a>
+        <a href="faq">Jobs</a>
+        <a href="faq">Ways to Watch</a>
+        <a href="faq">Terms of Use</a>
+      </div>
 
-        <div class="footer-item"> 
-            <a href="faq">Help Centre</a>
-            <a href="faq">Account</a>
-            <a href="faq">Speed Test</a>
-            <a href="faq">Legal Notices</a>
-        </div>
-        <div class="footer-item">
-            <a href="faq">Media Centre</a>
-            <a href="faq">Privacy</a>
-            <a href="faq">Cookie Preferences</a> 
-            <a href="faq">Corporate</a>
-        </div>
+      <div class="footer-item">
+        <a href="faq">Help Centre</a>
+        <a href="faq">Account</a>
+        <a href="faq">Speed Test</a>
+        <a href="faq">Legal Notices</a>
+      </div>
+      <div class="footer-item">
+        <a href="faq">Media Centre</a>
+        <a href="faq">Privacy</a>
+        <a href="faq">Cookie Preferences</a>
+        <a href="faq">Corporate</a>
+      </div>
 
-        <div class="footer-item">
-            <a href="faq">Contact Us</a>
-            <a href="faq">Speed Test</a> 
-            <a href="faq">Legal Notices</a> 
-            <a href="faq">Only on Netflix</a>
-        </div>
+      <div class="footer-item">
+        <a href="faq">Contact Us</a>
+        <a href="faq">Speed Test</a>
+        <a href="faq">Legal Notices</a>
+        <a href="faq">Only on Netflix</a>
+      </div>
     </div>
-</footer>
+  </footer>
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="javaScript.js"></script>
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -105,111 +120,3 @@
 </body>
 
 </html>
-=======
-<!doctype html>
-<html lang="en">
-
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/netflix-clone/Netflix/style2.css">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
-  <title>Login</title>
-  
-</head>
-
-<body>
-  <div class="main1">
-    <nav>
-        <span><img width="53" src="/netflix-clone/Netflix/logo.svg" alt=""></span>
-        
-    </nav>
-  <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-    <section class="login-box">
-      <h2 class="text-start text-white " style="font-weight: 700;">Sign In</h2>
-      <form class="mt-4">
-        <div class="form-floating mb-3 ">
-          <input type="email" class="form-control custom-input p-2 bg-dark" id="floatingInputGrid" placeholder="name@example.com" >
-          <label for="floatingInputGrid" class="text-secondary">Email or Mobile number</label>
-        </div>
-        <div class="form-floating mb-3">
-          <input type="password" class="form-control custom-input bg-dark" id="floatingPassword" placeholder="Password">
-          <label for="floatingInputGrid" class="text-secondary">Password</label>
-        </div>
-        <button type="submit" class="btn btn-danger red-btn w-100"><a href="landing.html" style="text-decoration: none; color: white; width: 100%;">Sign In</a></button>
-        <center class="mt-3 mb-3 text-secondary">OR</center>
-        <button type="submit" class="btn btn-dark grey-button p-2 w-100">Use as Sign-In code</button> <br>
-        <div class="mb-3 form-check mt-3">
-         
-          <input type="checkbox" class="form-check-input" id="rememberCheck">
-          <label class="form-check-label text-white" for="rememberCheck">Remember Me</label>
-        </div>
-
-        <div class="mt-3 d-flex align-items-center">
-          <img width="20px" src="./images/fb.png" alt="Facebook icon">
-          <p class="m-0 ms-2 small-text text-white">Login with Facebook</p>
-        </div>
-        <div class="mt-3 text-center">
-          <p class="m-0 text-white">New to Netflix? <a href="#">Sign up now.</a></p>
-          <p class="m-0 small-text text-white mt-2">This page is protected by Google reCAPTCHA to ensure you're not
-            a bot.
-            <a href="#">Learn more.</a>
-          </p>
-        </div>
-      </form>
-    </section>
-  </div>
-  
-  </div>
-  <footer>
-    <div class="questions">
-        Questions? Call 000-800-919-1694
-    </div>
-    <div class="footer">
-        <div class="footer-item"> 
-            <a href="faq">Investor Relations</a>
-            <a href="faq">Jobs</a>
-            <a href="faq">Ways to Watch</a>
-            <a href="faq">Terms of Use</a>
-        </div>
-
-        <div class="footer-item"> 
-            <a href="faq">Help Centre</a>
-            <a href="faq">Account</a>
-            <a href="faq">Speed Test</a>
-            <a href="faq">Legal Notices</a>
-        </div>
-        <div class="footer-item">
-            <a href="faq">Media Centre</a>
-            <a href="faq">Privacy</a>
-            <a href="faq">Cookie Preferences</a> 
-            <a href="faq">Corporate</a>
-        </div>
-
-        <div class="footer-item">
-            <a href="faq">Contact Us</a>
-            <a href="faq">Speed Test</a> 
-            <a href="faq">Legal Notices</a> 
-            <a href="faq">Only on Netflix</a>
-        </div>
-    </div>
-</footer>
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha
-  -->
-
-</body>
-
-</html>
->>>>>>> 8c2b9a847903942a113f7b6563e0f133336891b5
