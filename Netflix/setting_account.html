@@ -4,41 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Netflix - Finish Setting Up Your Account</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
   <link href="accounts_setting.css" rel="stylesheet">
-  <link href="navbar_responsive.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  .container{
+    margin-top: 1em;
+  }
+  .form-control{
+height: 60px;  }
+</style>
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+    <div class="container-fluid mt-10">
+      <div class="navbar-header mt-10">
         <img src="log.png" alt="Netflix Logo" class="d-inline-block align-text-top ms-0" style="margin-left: 5%; margin-top: 2%; width: 170px;">
-      </a>
-      <a class="btn btn-link btn-dark ms-auto" href="password.html">Sign In</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" style="color: black; margin-right: 20px; font-size:30px;">Sign in</a></li>
+      </ul>
     </div>
   </nav>
-  <hr>
-
+  <hr><br><br>
   <!-- Main Content -->
-  <div class="main-content">
-    <div class="container">
-      <div class="device-icons my-4">
-        <img src="image.png" alt="Devices">
-      </div>
-      <div class="step-info">
-        <h4 class="text-uppercase">Step 1 of 3</h4>
-        <h1>Finish setting up your</h1>
-        <h1>account</h1>
-        <p>Netflix is personalized for you.<br>
-           Create a password to watch on any<br>
-           device at any time.
-        </p>
-      </div> 
-      <button class="btn btn-next"><a href="confirmation_plan.html">Next</a></button>
+  <div class="main-content container my-5">
+    <div class="text-center my-4">
+      <img src="image.png" alt="Devices" class="img-fluid d-flex" style="width: 400px;">
+    </div>
+    <div class="text-center mb-4">
+        <h4 class="font-weight-bold text-dark">Step 1 of 3</h4>
+        <h1 class="h1 font-weight-bold text-dark">Netflix is personalized for you.</h1>
+      <p class="text-dark h3">Netflix is personalized for you.<br>
+         Create a password to watch on any<br>
+         device at any time.
+      </p>
+    </div> 
+    <div class="text-center">
+      <button type="submit" class="btn btn-danger btn-block" style="height: 60px;"><a href="confirmation_plan.html" style="color: white;">Next</a></button>
     </div>
   </div>
-
   <!-- Footer -->
   <footer>
     <div class="questions">
@@ -64,6 +73,6 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
