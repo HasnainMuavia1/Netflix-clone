@@ -4,71 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Netflix - Finish Setting Up Your Account</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
- <link href="accounts_setting.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> 
+  <link href="accounts_setting.css" rel="stylesheet">
 </head>
-<style>
-   
-
-</style>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-light">
-    <div class="container-fluid mt-10">
-      <div class="navbar-header mt-10">
-        <img src="log.png" alt="Netflix Logo" class="d-inline-block align-text-top ms-0" style="margin-left: 5%; margin-top: 2%; width: 170px;">
+  <nav class="navbar navbar-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="log.png" alt="Netflix Logo" class="d-inline-block align-text-top" style="width: 170px;">
+      </a>
+      <div class="ms-auto">
+        <a class="nav-link" href="#" style="font-size: 30px;">Sign in</a>
       </div>
-        <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" style="color: black; margin-right: 20px;">Sign in</a></li>
-      </ul>
     </div>
   </nav>
-  <hr>
-
-  <!-- Main Content -->
-  <div class="main-content">
+  <hr><br><br>
+ 
+  <!-- Step 2 Content -->
+  <div class="main-content text-center">
     <div class="container">
       <div class="step-info">
-        <span class="glyphicon glyphicon-ok icon-circle"></span>
-        <h4 class="text-uppercase">Step 2 of 3</h4>
+        <form>
+          <div class="form-group">  
+        <i class="fas fa-circle-check" style="font-size: 50px; color: red;"></i>
+        <h4 class="text-uppercase mt-3">Step 2 of 3</h4>
         <h1>Choose your plan.</h1>
         <ul class="list-unstyled" style="font-size: 24px;">
-          <li><span class="glyphicon glyphicon-ok" aria-hidden="true" style="color: red;"></span> No commitments,<br> cancel anytime.</li>
-          <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Everything on Netflix for one<br> low price.</li>
-          <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> No ads and no extra fees. Ever.</li>
+          <li><i class="fas fa-check" aria-hidden="true" style="color: red;"></i> No commitments,<br> cancel anytime.</li>
+          <li><i class="fas fa-check" aria-hidden="true" style="color: red;"></i> Everything on Netflix for one<br> low price.</li>
+          <li><i class="fas fa-check" aria-hidden="true" style="color: red;"></i> No ads and no extra fees. Ever.</li>
         </ul>
+        <button type="submit" class="btn btn-danger btn-block" style="height: 60px; width: 35%; background-color: red;">Next</button>
+</div>
+</form>
       </div>
-      <button type="submit" class="btn btn-danger btn-block" style="height: 60px;">Next</button>
     </div>
   </div><br><br><br>
-
-  <footer class=" bg-secondary py-5" style="height:150px">
-    <div class="container-fluid">
+  <!-- Footer -->
+  <footer class="bg text-dark py-5">
+    <div class="container">
       <!-- Questions Section -->
-      <div class="text-start mb-4">
+      <div class="mb-4">
         <h5 class="mb-0">Questions? Contact us.</h5>
       </div>
       <!-- Footer Links Section -->
-      <div class="row text-dark" style="height: 150px; margin-right: 10px;">
-        <div class="col-md-3 mb-3 px-3">
+      <div class="row footer-links">
+        <div class="col-md-3 mb-3">
           <ul class="list-unstyled">
-            <li><a href="faq.html" class="text-dark">FAQ</a></li>
+            <li><a href="faq.html" class="text-dark">FAQ</a></li><br>
             <li><a href="privacy.html" class="text-dark">Privacy</a></li>
           </ul>
         </div>
-        <div class="col-md-3 mb-3 px-3">
+        <div class="col-md-3 mb-3">
           <ul class="list-unstyled">
-            <li><a href="help-center.html" class="text-dark">Help Center</a></li>
+            <li><a href="help-center.html" class="text-dark">Help Center</a></li><br>
             <li><a href="cookie-preferences.html" class="text-dark">Cookie Preferences</a></li>
           </ul>
         </div>
-        <div class="col-md-3 mb-3 px-3">
+        <div class="col-md-3 mb-3">
           <ul class="list-unstyled">
-            <li><a href="netflix-shop.html" class="text-dark">Netflix Shop</a></li>
+            <li><a href="netflix-shop.html" class="text-dark">Netflix Shop</a></li><br>
             <li><a href="corporate-info.html" class="text-dark">Corporate Information</a></li>
           </ul>
         </div>
-        <div class="col-md-3 mb-3 px-3">
+        <div class="col-md-3 mb-3">
           <ul class="list-unstyled">
             <li><a href="terms-of-use.html" class="text-dark">Terms of Use</a></li>
           </ul>
@@ -76,7 +77,9 @@
       </div>
     </div>
   </footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
