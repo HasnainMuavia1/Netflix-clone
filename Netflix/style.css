@@ -1,10 +1,5 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-   
-}
-.container{
-    overflow: auto;
-
 }
 
 /* The Modal (background) */
@@ -16,8 +11,7 @@ body {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-  /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
@@ -25,7 +19,6 @@ body {
     background-color: #191919;
     margin: auto; /* Centered */
     border: none;
-  /* Ensures scroll for entire modal */
     border-radius: 10px;
     max-width: 1200px; /* Limit the max-width */
 }
@@ -37,12 +30,12 @@ body {
 }
 
 @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
+    from {-webkit-transform: scale(0)}
     to {-webkit-transform: scale(1)}
 }
-  
+
 @keyframes animatezoom {
-    from {transform: scale(0)} 
+    from {transform: scale(0)}
     to {transform: scale(1)}
 }
 
@@ -52,7 +45,6 @@ body {
     opacity: 1;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
-    /* border-radius: 50%; */
     padding: 0.75rem; /* Increased padding */
 }
 
@@ -74,11 +66,38 @@ body {
 
 .text-overlay-text {
     font-size: 3rem;
-    margin: 20;
     font-weight: bold;
 }
 
 div p {
     color: white;
     font-size: 1.3rem;
+}
+
+pre {
+    color: grey;
+    font-size: 1.3rem;
+}
+
+/* External CSS */
+.profile-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-icon svg, .rate-icon svg {
+    color: grey;
+    width: 55px; /* Adjust the size to match the desired icon size */
+    height: 55px;
+    transition: background-color 0.3s, fill 0.3s;
+}
+
+.list-icon:hover svg, .rate-icon:hover svg {
+    color: white;
+}
+
+.list-icon:hover pre, .rate-icon:hover pre {
+    color: white;
 }
