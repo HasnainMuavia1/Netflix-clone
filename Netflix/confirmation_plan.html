@@ -7,6 +7,26 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
  <link href="accounts_setting.css" rel="stylesheet">
 </head>
+<style>
+    
+  .icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the circle shape */
+  background-color:white; /* Background color of the circle */
+  color: red; /* Icon color */
+  border:2px solid red;
+  font-size: 20px; /* Size of the icon */
+  line-height: 40px; /* Ensures icon is vertically centered */
+}
+.glyphicon-ok{
+  color: red;
+}
+
+</style>
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-light">
@@ -25,15 +45,16 @@
   <div class="main-content">
     <div class="container">
       <div class="step-info">
-        <h4 class="text-uppercase">Step 1 of 3</h4>
+        <span class="glyphicon glyphicon-ok icon-circle"></span>
+        <h4 class="text-uppercase">Step 2 of 3</h4>
         <h1>Choose your plan.</h1>
-        <ul class="list-unstyled">
-          <li><span class="glyphicon glyphicon-danger glyphicon-ok" aria-hidden="true"></span> No commitments, cancel anytime.</li>
-          <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Everything on Netflix for one low price.</li>
+        <ul class="list-unstyled" style="font-size: 24px;">
+          <li><span class="glyphicon glyphicon-ok" aria-hidden="true" style="color: red;"></span> No commitments,<br> cancel anytime.</li>
+          <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Everything on Netflix for one<br> low price.</li>
           <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> No ads and no extra fees. Ever.</li>
         </ul>
       </div>
-      <button type="submit" class="btn btn-next"><a href="plans.html">Next</a></button>
+      <button type="submit" class="btn btn-danger btn-block" style="height: 60px;">Next</button>
     </div>
   </div>
 
