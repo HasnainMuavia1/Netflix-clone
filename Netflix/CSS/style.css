@@ -106,3 +106,40 @@ pre {
     width: 100%;
     height: auto;
 }
+ /* Increase card size on hover */
+.video-item {
+    transition: transform 0.3s;
+  }
+  
+  .video-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Position the play button and download icon */
+  .video-thumbnail .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s, fill 0.3s;
+  }
+  
+  .video-thumbnail .download-icon {
+    position: absolute;
+    margin-top: 95px;
+    right: 40px;
+    font-size: 240px;
+    color: white;
+}
+  
+  /* Change play button color to red and increase size on hover */
+  .play-button:hover svg {
+    fill: red;
+    transform: scale(1.2);
+  }
+  
+  /* Increase download button size on hover */
+  .download-icon:hover svg {
+    transform: scale(1.2);
+  }
+  
