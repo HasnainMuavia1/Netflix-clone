@@ -10,7 +10,6 @@
     overflow: auto; /* Enable scrolling */
     background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
-
 /* Modal Content/Box */
 .modal-content {
     background-color: #191919;
@@ -22,7 +21,6 @@
     display: flex;
     flex-direction: column;
 }
-
 /* Modal Body */
 .modal-body {
     overflow: auto; /* Enable scrolling within the modal */
@@ -30,26 +28,22 @@
     flex: 1; /* Allow the modal body to expand and fill the available space */
     position: relative; /* Ensure the text-overlay can be positioned relative to this container */
 }
-
 /* Add Zoom Animation */
 .animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s;
 }
-
 @-webkit-keyframes animatezoom {
     from { -webkit-transform: scale(0) }
     to { -webkit-transform: scale(1) }
 }
-
 @keyframes animatezoom {
     from { transform: scale(0) }
     to { transform: scale(1) }
 }
-
 /* Modal Header and Close Button */
 .modal-body .btn-close {
-    font-size: 2rem; /* Increased size */
+    font-size: 1.5rem; /* Increased size */
     opacity: 1;
     color: #fff;
     background-color: transparent;
@@ -59,20 +53,19 @@
     top: 10px;
     right: 10px;
 }
-
 .modal-body .btn-close:hover {
-    color: #ff0000;
+    color: white;
+    font-size: 2rem;
     cursor: pointer;
 }
-
 /* Text Overlay */
 .text-overlay {
-    position: absolute; 
-    bottom: 1px; 
-    margin-left: 1px; 
+     position: absolute;  
+    bottom: 0px;    
+    margin-left: -110px; 
     background: transparent; 
     color: white; 
-    padding: 180px; 
+    padding: 200px; 
     z-index: 2; /* Ensure it is above the image */
 }
 
@@ -80,17 +73,14 @@
     font-size: 3rem;
     font-weight: bold;
 }
-
 div p {
     color: white;
     font-size: 1.3rem;
 }
-
 pre {
     color: grey;
     font-size: 1.3rem;
 }
-
 /* Profile Icons */
 .profile-col {
     display: flex;
@@ -98,25 +88,19 @@ pre {
     align-items: center;
     justify-content: center;
 }
-
-.list-icon svg,
-.rate-icon svg {
+.list-icon svg,.rate-icon svg {
     color: grey;
     width: 55px; /* Adjust the size to match the desired icon size */
     height: 55px;
     transition: background-color 0.3s, fill 0.3s;
 }
-
-.list-icon:hover svg,
-.rate-icon:hover svg {
+.list-icon:hover svg, .rate-icon:hover svg {
     color: white;
 }
 
-.list-icon:hover pre,
-.rate-icon:hover pre {
+.list-icon:hover pre,.rate-icon:hover pre {
     color: white;
 }
-
 /* Ensure the image covers the full modal content area */
 .modal-body img {
     width: 100%;
