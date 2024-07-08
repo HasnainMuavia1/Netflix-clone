@@ -91,7 +91,7 @@
                         <strong>Rs 450/month</strong> <br>
                         Basic &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                        <a href="#" style="  text-decoration: underline; color: #353785;">Change</a>
+                        <a href="plans.html" style="  text-decoration: underline; color: #353785;">Change</a>
                     </label>
                 </div>
             </div>
@@ -99,18 +99,13 @@
             <p class="text-muted">
                 By checking the checkbox below, you agree to our <a href="#">Terms of Use</a>, <a href="#">Privacy Statement</a>, and that you are over 18. Netflix will automatically continue your membership and charge the membership fee (currently Rs 450/month) to your payment method until you cancel. You may cancel at any time to avoid future charges.
             </p>
-            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            <button type="button" class="btn btn-primary btn-block" onclick="window.location.href='add.html'">Submit</button>
+
         </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        document.getElementById('paymentForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            // Add your form submission handling code here
-            alert('Form submitted!');
-        });
-    </script>
+    
 </body>
 </html>
