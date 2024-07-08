@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/netflix-clone/Netflix/images/favicon.ico" type="image/x-icon">
+
     <title>Choose How to Pay</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> 
+    <link href="/Netflix/CSS/accounts_setting.css" rel="stylesheet">
     <style>
-       body{
-        background-color: white;
-       }
+        body {
+            background-color: white;
+        }
         .container {
             background-color: white;
             padding: 20px;
@@ -35,86 +39,105 @@
             width: 30px;
             margin-left: 10px;
         }
-        
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        footer h5 {
+            margin-bottom: 20px;
+        }
+        footer a {
+            color: #343a40;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-light " >
-        <div class="container-fluid" style="background-color: white;">
+    <nav class="navbar navbar-light bg-white">
+        <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="../images/log.png" alt="Netflix Logo" class="d-inline-block align-text-top" style="width: 170px;">
           </a>
           <div class="ms-auto">
-            <a class="nav-link" href="#" style="font-size: 30px;color: black;">Sign in</a>
+            <a class="nav-link" href="#" style="font-size: 30px;color: black;">Sign out</a>
           </div>
         </div>
-      </nav>  <hr><br><br>
-
-    
+    </nav>
+    <hr>
+    <br><br>
     <div class="container text-center">
-           <img src="../images/lock.png" width="90x" height="80px"><br><br>
+        <img src="../images/lock.png" width="90px" height="80px"><br><br>
         <h5 class="text-muted" style="font-weight: lighter;">STEP <strong>3</strong> OF <strong>3</strong></h5>
         <h2 class="mb-4">Choose how to pay</h2>
         <p>Your payment is encrypted and you can change how you pay anytime.</p>
         <p><strong>Secure for peace of mind.<br>Cancel easily online.</strong></p>
-
-            <div style="display: flex; justify-content: flex-end;line-height: 80%; ">
-                <p>                End-to-end encrypted
-                </p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#bdb82b" class="bi bi-lock-fill" viewBox="0 0 16 16">
-                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"/>
-                  </svg>
-            </div>
-                        <label style="border: 2px solid #c3c7c7; width: 400px; height: 50px;display: flex;padding-top: 10px; padding-left: 5px;"> Credit or Debit Card
-                
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" style="margin-top: 6px; margin-left: 20px; border: 1px solid #ccc; width:30px;height: 14px;">&nbsp;&nbsp;
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="MasterCard" style="margin-top: 6px; border: 1px solid #ccc; height: 14px;">&nbsp;&nbsp;
-                            <img src="https://static.slickdealscdn.com/attachment/3/8/0/3/8/5/8/300x300/14685886.thumb" alt="MasterCard" style="margin-top: 6px; border: 1px solid #ccc; width: 30px; height: 14px;">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="credit.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" style="margin-top: 5px;" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-                              </svg> </a>       
+        <div style="display: flex; justify-content: flex-end; line-height: 80%;">
+            <p>End-to-end encrypted</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#bdb82b" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"/>
+            </svg>
+        </div>
+        <label style="border: 2px solid #c3c7c7; width: 400px; height: 50px; display: flex; padding-top: 10px; padding-left: 5px;">
+            Credit or Debit Card
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" style="margin-top: 6px; margin-left: 20px; border: 1px solid #ccc; width:30px; height: 14px;">&nbsp;&nbsp;
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="MasterCard" style="margin-top: 6px; border: 1px solid #ccc; height: 14px;">&nbsp;&nbsp;
+            <img src="https://static.slickdealscdn.com/attachment/3/8/0/3/8/5/8/300x300/14685886.thumb" alt="MasterCard" style="margin-top: 6px; border: 1px solid #ccc; width: 30px; height: 14px;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="credit.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" style="margin-top: 5px;" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+            </svg></a>       
         </label>
     </div>
     <br><br><br>
 
-    <footer class="bg  py-5">
-        <div class="container">
+    <footer class="bg py-5" style="color: grey;">
+        <div class="container-fluid">
           <!-- Questions Section -->
           <div class="mb-4">
-            <h5 class="mb-0">Questions? Contact us.</h5>
+            <h5 class="mb-0" style="padding-left: 30px;">Questions? Contact us.</h5>
           </div>
           <!-- Footer Links Section -->
-          <div class="row">
-            <div class="col-md-3">
-              <ul class="list-unstyled">
-                <li><a href="faq.html" class="text-dark">FAQ</a></li>
-                <li><a href="privacy.html" class="text-dark">Privacy</a></li>
+          <div class="row" >
+            <div class="col-6 col-sm-6 col-md-3 mb-3" >
+              <ul class="list-unstyled" style="padding-left: 30px;">
+                <li><a href="faq.html" class="text-muted">FAQ</a></li>
+                <li><a href="privacy.html" class="text-muted">Privacy</a></li>
               </ul>
             </div>
-            <div class="col-md-3">
-              <ul class="list-unstyled">
-                <li><a href="help-center.html" class="text-dark">Help Center</a></li>
-                <li><a href="cookie-preferences.html" class="text-dark">Cookie Preferences</a></li>
+            <div class="col-6 col-sm-6 col-md-3 mb-3">
+              <ul class="list-unstyled" style="padding-left: 30px;">
+                <li><a href="help-center.html" class="text-muted">Help Center</a></li>
+                <li><a href="cookie-preferences.html" class="text-muted">Cookie Preferences</a></li>
               </ul>
             </div>
-            <div class="col-md-3">
-              <ul class="list-unstyled">
-                <li><a href="netflix-shop.html" class="text-dark">Netflix Shop</a></li>
-                <li><a href="corporate-info.html" class="text-dark">Corporate Information</a></li>
+            <div class="col-6 col-sm-6 col-md-3 mb-3">
+              <ul class="list-unstyled" style="padding-left: 30px;">
+                <li><a href="netflix-shop.html" class="text-muted">Netflix Shop</a></li>
+                <li><a href="corporate-info.html" class="text-muted">Corporate Information</a></li>
               </ul>
             </div>
-            <div class="col-md-3">
-              <ul class="list-unstyled">
-                <li><a href="terms-of-use.html" class="text-dark">Terms of Use</a></li>
+            <div class="col-6 col-sm-6 col-md-3 mb-3">
+              <ul class="list-unstyled" style="padding-left: 30px;">
+                <li><a href="terms-of-use.html" class="text-muted">Terms of Use</a></li>
               </ul>
             </div>
           </div>
         </div>
       </footer>
+      
     
     
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

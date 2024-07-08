@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/netflix-clone/Netflix/images/favicon.ico" type="image/x-icon">
+
     <title>Credit or Debit Card Setup</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -51,13 +52,28 @@
             margin-left: 5px;
 
         }
-
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
 
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-light bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../images/log.png" alt="Netflix Logo" class="d-inline-block align-text-top" style="width: 170px;">
+          </a>
+          <div class="ms-auto">
+            <a class="nav-link" href="#" style="font-size: 30px;color: black;">Sign out</a>
+          </div>
+        </div>
+    </nav>
+    <hr>
+    
     <div class="container">
-        <h2 style="margin-top: 80px;">Set up your credit or debit card</h2>
+        <h2>Set up your credit or debit card</h2>
 
         <div class="payment-method mt-4">
             <div>
@@ -99,10 +115,45 @@
             <p class="text-muted">
                 By checking the checkbox below, you agree to our <a href="#">Terms of Use</a>, <a href="#">Privacy Statement</a>, and that you are over 18. Netflix will automatically continue your membership and charge the membership fee (currently Rs 450/month) to your payment method until you cancel. You may cancel at any time to avoid future charges.
             </p>
-            <button type="button" class="btn btn-primary btn-block" onclick="window.location.href='add.html'">Submit</button>
-
+            <button type="button" class="btn btn-danger btn-block" onclick="window.location.href='add.html'" style="width:380px;height: 50px;">Start MembershipS</button>
+            <a href="#" class="text-muted" style="font-size: 12px; text-decoration: underline;">This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.</a>
         </form>
-    </div>
+    </div><br><br><br><br>
+    <footer class="bg py-5" style="color: grey; ">
+        <div class="container-fluid">
+          <!-- Questions Section -->
+          <div class="mb-4">
+            <h5 class="mb-0" style="padding-left: 30px;">Questions? Contact us.</h5>
+          </div>
+          <!-- Footer Links Section -->
+          <div class="row" >
+            <div class="col-6 col-sm-6 col-md-3 mb-3" >
+              <ul class="list-unstyled" style="padding-left: 30px;">
+                <li><a href="faq.html" class="text-muted">FAQ</a></li>
+                <li><a href="privacy.html" class="text-muted">Privacy</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 mb-3">
+              <ul class="list-unstyled" style="padding-left: 30px;">
+                <li><a href="help-center.html" class="text-muted">Help Center</a></li>
+                <li><a href="cookie-preferences.html" class="text-muted">Cookie Preferences</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 mb-3">
+              <ul class="list-unstyled" style="padding-left: 30px;">
+                <li><a href="netflix-shop.html" class="text-muted">Netflix Shop</a></li>
+                <li><a href="corporate-info.html" class="text-muted">Corporate Information</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 mb-3">
+              <ul class="list-unstyled" style="padding-left: 30px;">
+                <li><a href="terms-of-use.html" class="text-muted">Terms of Use</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
