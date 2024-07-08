@@ -12,7 +12,7 @@ body {
 
 
 .main {
-    background-image:url("/netflix-clone/Netflix/bg.jpg");
+    background-image:url("/netflix-clone/Netflix/images/bg.jpg");
     background-position: center center;
     background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@ body {
 }
 
 .main1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.491), rgba(0, 0, 0, 0.416)) , url("/netflix-clone/Netflix/bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.491), rgba(0, 0, 0, 0.416)) , url("/netflix-clone/Netflix/images/bg.jpg");
     background-position: center center;
     background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
@@ -219,7 +219,7 @@ section.first>div :nth-child(2) {
 
 .faqbox {
     transition: all 1s ease-out;
-    font-size: 24px;
+    font-size: 16px !important;
     display: flex;
     justify-content: space-between;
     background-color: #2d2d2d;
@@ -267,7 +267,7 @@ footer .questions {
 
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
 
     nav{
         max-width: 90vw;

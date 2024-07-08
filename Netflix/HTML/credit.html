@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/netflix-clone/Netflix/images/favicon.ico" type="image/x-icon">
+
+    <title>Credit or Debit Card Setup</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+        }
+        .container {
+            background: white;
+            max-width: 400px;
+            width: 100%;
+        }
+        .icon-input {
+    padding-right: .5em; /* Adjust the padding to make space for the icon */
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="grey" class="bi bi-credit-card" viewBox="0 0 16 16"%3E%3Cpath d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/%3E%3Cpath d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/%3E%3C/svg%3E'); /* Use the data URL of your SVG icon */
+    background-repeat: no-repeat;
+    background-position: right 5px center; /* Adjust the position of the icon to the right */
+    background-size: 1.5em; /* Adjust the size of the icon */
+    background-origin: content-box; /* Ensure the background doesn't overlap text */
+    background-clip: content-box;
+    
+}
+#cvv {
+    padding-right: 0.2em; /* Adjust the padding to make space for the icon */
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" class="bi bi-question-circle" viewBox="0 0 16 16"%3E%3Cpath d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/%3E%3Cpath d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Adjust the position of the icon to the right */
+    background-size: 1.5em; /* Adjust the size of the icon */
+    background-origin: content-box; /* Ensure the background doesn't overlap text */
+    background-clip: content-box;
+}
+.payment-method {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-bottom: 7px;
+        }
+        .payment-method img {
+            width: 30px;
+            margin-left: 5px;
+
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../images/log.png" alt="Netflix Logo" class="d-inline-block align-text-top" style="width: 170px;">
+          </a>
+          <div class="ms-auto">
+            <a class="nav-link" href="#" style="font-size: 30px;color: black;">Sign out</a>
+          </div>
+        </div>
+    </nav>
+    <hr>
+    
+    <div class="container">
+        <h2>Set up your credit or debit card</h2>
+
+        <div class="payment-method mt-4">
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" style=" border: 1px solid #ccc; width:30px;height: 14px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="MasterCard" style=" border: 1px solid #ccc; height: 14px;">
+                <img src="https://static.slickdealscdn.com/attachment/3/8/0/3/8/5/8/300x300/14685886.thumb" alt="MasterCard" style=" border: 1px solid #ccc; width: 30px; height: 14px;">
+
+            </div>
+        </div>
+        
+        <form id="paymentForm">
+            <div class="form-group" style="margin-bottom: 6px;">
+                <input type="text" style="height: 50px;"  class="form-control icon-input" id="cardNumber" placeholder="Card number"  >
+                            
+
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6" style="margin-bottom: 6px;">
+                    <input style="height: 50px;" type="text" class="form-control" id="expirationDate" placeholder="Expiration date">
+                </div>
+                <div class="form-group col-md-6" >
+                    <input style="height: 50px;" type="text" class="form-control " id="cvv" placeholder="CVV">
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="text" style="height: 50px;" class="form-control" id="nameOnCard" placeholder="Name on card">
+            </div>
+            <div class="form-group">
+                <div class="form-check" style="background-color: #d2d4d4;border: 2px solid #838991;height:60px;">
+                    <label class="form-check-label" for="basicPlan" >
+                        <strong>Rs 450/month</strong> <br>
+                        Basic &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                        <a href="plans.html" style="  text-decoration: underline; color: #353785;">Change</a>
+                    </label>
+                </div>
+            </div>
+            <p class="text-muted">Your payments will be processed internationally. Additional bank fees may apply.</p>
+            <p class="text-muted">
+                By checking the checkbox below, you agree to our <a href="#">Terms of Use</a>, <a href="#">Privacy Statement</a>, and that you are over 18. Netflix will automatically continue your membership and charge the membership fee (currently Rs 450/month) to your payment method until you cancel. You may cancel at any time to avoid future charges.
+            </p>
+            <button type="button" class="btn btn-danger btn-block" onclick="window.location.href='add.html'" style="width:380px;height: 50px;">Start MembershipS</button>
+            <a href="#" class="text-muted" style="font-size: 12px; text-decoration: underline;">This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.</a>
+        </form>
+    </div><br><br><br><br>
+    <footer class="bg py-5" style="color: grey; ">
+        <div class="container-fluid">
+          <!-- Questions Section -->
+          <div class="mb-4">
+            <h5 class="mb-0" style="padding-left: 30px;">Questions? Contact us.</h5>
+          </div>
+          <!-- Footer Links Section -->
+          <div class="row" >
+            <div class="col-6 col-sm-6 col-md-3 mb-3" >
+              <ul class="list-unstyled" style="padding-left: 30px;">
+                <li><a href="faq.html" class="text-muted">FAQ</a></li>
+                <li><a href="privacy.html" class="text-muted">Privacy</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 mb-3">
+              <ul class="list-unstyled" style="padding-left: 30px;">
+                <li><a href="help-center.html" class="text-muted">Help Center</a></li>
+                <li><a href="cookie-preferences.html" class="text-muted">Cookie Preferences</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 mb-3">
+              <ul class="list-unstyled" style="padding-left: 30px;">
+                <li><a href="netflix-shop.html" class="text-muted">Netflix Shop</a></li>
+                <li><a href="corporate-info.html" class="text-muted">Corporate Information</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 mb-3">
+              <ul class="list-unstyled" style="padding-left: 30px;">
+                <li><a href="terms-of-use.html" class="text-muted">Terms of Use</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
