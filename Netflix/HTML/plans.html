@@ -20,141 +20,138 @@
       margin-left: 90%;
     }
 
-    @media (max-width: 767px) {
-      .navbar-header img {
-        width: 50%;
-      }
-      .btn-block {
-        width: 100%;
-      }
-    }
   </style>
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-light">
-    <div class="container-fluid mt-10">
-      <div class="navbar-header mt-10">
-        <img src="log.png" alt="Netflix Logo" class="d-inline-block align-text-top ms-0" style="margin-left: 5%; margin-top: 2%; width: 170px;">
+  <nav class="navbar navbar-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="log.png" alt="Netflix Logo" class="d-inline-block align-text-top" style="width: 170px;">
+      </a>
+      <div class="ms-auto">
+        <a class="nav-link" href="#" style="font-size: 30px;">Sign in</a>
       </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" style="color: black; margin-right: 20px;">Sign in</a></li>
-      </ul>
     </div>
   </nav>
   <hr>
-  <div class="container" style="margin: 0%;">
-    <h4 class="text-uppercase">step 2 of 3</h4>
-    <h1 class="text-start ms-0">Choose the plan that’s right for you</h1>
+  <div class="container">
+    <h4 class="text-uppercase">step 2 of 3</h4><br>
   </div>
+  <div class="container">
+    <h1>Choose the plan that’s right for you</h1>
+  </div>
+  
   <!-- Main Content -->
-  <div class="main-content">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3 col-sm-6 col-12 mb-4" onclick="selectPlan(this)">
-          <div class="panel-heading premium-heading text-center-gradient">
-            Most Popular
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <h3 class="text-center" style="background-color: #e509;">Premium<br>4K + HDR <br><i class="fas fa-check-circle ok-icon"></i></h3>
-              <div>
-                <p>Monthly price<br>Rs 1,100</p>
-                <hr>
-                <p>Video and sound quality<br> Best</p>
-                <hr>
-                <p>Resolution<br> 4K (Ultra HD) + HDR</p>
-                <hr>
-                <p>Spatial audio (immersive sound)<br> Included</p>
-                <hr>
-                <p>Supported devices<br> TV, computer, mobile phone, tablet</p>
-                <hr>
-                <p>Devices your household can watch at the same time<br> 4</p>
-                <hr>
-                <p>Download devices<br> 4</p>
-                <hr>
-              </div>
-            </div>
-          </div>
+ <div class="main-content">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-3 col-sm-6 col-12 mb-4" onclick="selectPlan(this)">
+        <div class="panel-heading premium-heading text-center-gradient">
+          Most Popular
         </div>
-        <div class="col-md-3 col-sm-6 col-12 mb-4" onclick="selectPlan(this)">
-          <div class="panel-heading text-center-gradient">
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <h3 class="text-center">Standard<br>1080p <br><i class="fas fa-check-circle ok-icon"></i></h3>
-              <div>
-                <p>Monthly price<br>Rs 800</p>
-                <hr>
-                <p>Video and sound quality<br> Great</p>
-                <hr>
-                <p>Resolution<br> 1080p (Full HD)</p>
-                <hr>
-                <p>Supported devices<br> TV, computer, mobile phone, tablet</p>
-                <hr>
-                <p>Devices your household can watch at the same time<br> 2</p>
-                <hr>
-                <p>Download devices<br> 2</p>
-                <hr>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-12 mb-4" onclick="selectPlan(this)">
-          <div class="panel-heading text-center-gradient">
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <h3 class="text-center">Basic<br>720p <br><i class="fas fa-check-circle ok-icon"></i></h3>
-              <div>
-                <p>Monthly price<br>Rs 450</p>
-                <hr>
-                <p>Video and sound quality<br> Good</p>
-                <hr>
-                <p>Resolution<br> 720p (HD)</p>
-                <hr>
-                <p>Supported devices<br> TV, computer, mobile phone, tablet</p>
-                <hr>
-                <p>Devices your household can watch at the same time<br> 1</p>
-                <hr>
-                <p>Download devices<br> 1</p>
-                <hr>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-12 mb-4" onclick="selectPlan(this)">
-          <div class="panel-heading text-center-gradient">
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <h3 class="text-center">Mobile<br>480p<br><i class="fas fa-check-circle ok-icon"></i></h3>
-              <div>
-                <p>Monthly price<br>Rs 250</p>
-                <hr>
-                <p>Video and sound quality<br> Fair</p>
-                <hr>
-                <p>Resolution<br> 480p</p>
-                <hr>
-                <p>Supported devices<br> Mobile phone, tablet</p>
-                <hr>
-                <p>Devices your household can watch at the same time<br> 1</p>
-                <hr>
-                <p>Download devices<br> 1</p>
-                <hr>
-              </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h3 class="text-center" style="background-color: #e509;">Premium<br>4K + HDR <br><i class="fas fa-check-circle ok-icon"></i></h3>
+            <div>
+              <p>Monthly price<br>Rs 1,100</p>
+              <hr>
+              <p>Video and sound quality<br> Best</p>
+              <hr>
+              <p>Resolution<br> 4K (Ultra HD) + HDR</p>
+              <hr>
+              <p>Spatial audio (immersive sound)<br> Included</p>
+              <hr>
+              <p>Supported devices<br> TV, computer, mobile phone, tablet</p>
+              <hr>
+              <p>Devices your household can watch at the same time<br> 4</p>
+              <hr>
+              <p>Download devices<br> 4</p>
+              <hr>
             </div>
           </div>
         </div>
       </div>
-      <p>HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our <a href="#" style="color: blue;">Terms of Use</a> for more details.
-      </p>
-      <p>Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard, and 1 with Basic and Mobile.
-      </p>
+      <div class="col-md-3 col-sm-6 col-12 mb-4" onclick="selectPlan(this)">
+        <div class="panel-heading text-center-gradient">
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h3 class="text-center">Standard<br>1080p <br><i class="fas fa-check-circle ok-icon"></i></h3>
+            <div>
+              <p>Monthly price<br>Rs 800</p>
+              <hr>
+              <p>Video and sound quality<br> Great</p>
+              <hr>
+              <p>Resolution<br> 1080p (Full HD)</p>
+              <hr>
+              <p>Supported devices<br> TV, computer, mobile phone, tablet</p>
+              <hr>
+              <p>Devices your household can watch at the same time<br> 2</p>
+              <hr>
+              <p>Download devices<br> 2</p>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-12 mb-4" onclick="selectPlan(this)">
+        <div class="panel-heading text-center-gradient">
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h3 class="text-center">Basic<br>720p <br><i class="fas fa-check-circle ok-icon"></i></h3>
+            <div>
+              <p>Monthly price<br>Rs 450</p>
+              <hr>
+              <p>Video and sound quality<br> Good</p>
+              <hr>
+              <p>Resolution<br> 720p (HD)</p>
+              <hr>
+              <p>Supported devices<br> TV, computer, mobile phone, tablet</p>
+              <hr>
+              <p>Devices your household can watch at the same time<br> 1</p>
+              <hr>
+              <p>Download devices<br> 1</p>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-12 mb-4" onclick="selectPlan(this)">
+        <div class="panel-heading text-center-gradient">
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h3 class="text-center">Mobile<br>480p<br><i class="fas fa-check-circle ok-icon"></i></h3>
+            <div>
+              <p>Monthly price<br>Rs 250</p>
+              <hr>
+              <p>Video and sound quality<br> Fair</p>
+              <hr>
+              <p>Resolution<br> 480p</p>
+              <hr>
+              <p>Supported devices<br> Mobile phone, tablet</p>
+              <hr>
+              <p>Devices your household can watch at the same time<br> 1</p>
+              <hr>
+              <p>Download devices<br> 1</p>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our <a href="#" style="color: blue;">Terms of Use</a> for more details.
+    </p>
+    <p>Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard, and 1 with Basic and Mobile.
+    </p>
+    <div class="d-flex justify-content-center">
       <button type="submit" class="btn btn-danger btn-block" style="height: 60px; width: 35%; background-color: red;">Next</button>
     </div>
   </div>
-  <!-- Footer -->
+</div>
+ <!-- Footer -->
   <footer class="bg text-dark py-5">
     <div class="container">
       <!-- Questions Section -->
