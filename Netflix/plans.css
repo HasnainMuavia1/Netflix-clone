@@ -1,91 +1,136 @@
-    /* Custom CSS for Main Content and Main Block */
-    .main-content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px 0;
-    }
-    .container {
-      max-width: 1200px;
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .row {
-      display: flex;
-      justify-content: center;
-    }
-    .col-md-3 {
-      flex: 1;
-      min-width: 280px;
-      margin: 10px;
-      display: flex;
-      flex-direction: column;
-      position: relative; /* Ensure relative positioning for absolutely positioned elements */
-    }
-    .panel {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      overflow: hidden; /* Prevent content overflow */
-    }
-    .panel-heading {
-      padding: 10px;
-      font-size: 16px;
-      font-weight: bold;
-      text-align: center;
-    }
-    .premium-heading {
-      background-color: #e50914;
-      color: white;
-    }
-    .standard-heading {
-      background-color: #222;
-      color: white;
-    }
-    .basic-heading {
-      background-color: #333;
-      color: white;
-    }
-    .mobile-heading {
-      background-color: #444;
-      color: white;
-    }
-    .panel-body {
-      padding: 20px;
-      flex: 1;
-    }
-    .list-unstyled {
-      padding-left: 0;
-      list-style: none;
-    }
-    .list-unstyled li {
-      padding: 5px 0;
-      font-size: 14px;
-    }
-    .btn-next {
-      background-color: #e50914;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      margin-top: 20px;
-      cursor: pointer;
-    }
-    .btn-next:hover {
-      background-color: #d40813;
-    }
-    .ok-icon {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 24px;
-      color: #e509;
-      display: none; /* Initially hide the "ok" icon */
-    }
-    /* Remove border on hover */
-    .col-md-3:hover .panel {
-      border: none;
-    }
+/* Custom CSS for Main Content and Main Block */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.col-md-3 {
+  flex: 1;
+  min-width: 280px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Ensure relative positioning for absolutely positioned elements */
+}
+
+.panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden; /* Prevent content overflow */
+  cursor: pointer;
+}
+
+.panel-heading {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.premium-heading {
+  background-color: #333;
+  color: white;
+  border-top: 10px;
+}
+
+.standard-heading {
+  background-color: #222;
+  color: white;
+}
+
+.basic-heading {
+  background-color: #333;
+  color: white;
+}
+
+.mobile-heading {
+  background-color: #444;
+  color: white;
+}
+
+.btn-next {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btn-next:hover {
+  background-color: #d40813;
+  border: none;
+  color: white;
+}
+
+/* Remove border on hover */
+.col-md-3:hover .panel {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.text-center {
+  background: linear-gradient(45deg, blue, purple, red);
+  color: white;
+  padding: 10px;
+  border-radius: 9px;
+  width: 100%;
+  margin: 4px;
+  height: 110px;
+}
+
+li {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, rgb(27, 20, 20), #1e1919);
+  color: transparent;
+  background-clip: text;
+  padding: 5px;
+}
+
+.panel-body {
+  padding: 20px;
+}
+
+ul.list-unstyled {
+  padding: 0;
+  margin: 0;
+}
+
+ul.list-unstyled li {
+  margin-bottom: 10px;
+}
+
+hr {
+  margin: 10px 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* Media query for medium and larger screens */
+/* Media query for screens larger than 1100px */
