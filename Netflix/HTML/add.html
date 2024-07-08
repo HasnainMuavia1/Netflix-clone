@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Selection</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: black;
+      color: gray;
+    }
+    .profile-col {
+      padding-right: 10px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .profile-col img {
+      width: 100%;
+      max-width: 150px;
+      margin: 0 auto;
+      transition: filter 0.3s;
+    }
+    .profile-col p {
+      transition: color 0.3s;
+    }
+    .profile-col:last-child {
+      padding-right: 0;
+    }
+    .profile-col:hover img {
+      /* filter: brightness(0.5); */
+      border: 4px solid white;
+    }
+    .profile-col:hover p {
+      color: white;
+    }
+    .last-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .last-icon svg {
+      width: 64px; /* Adjust the size to match the desired plus icon size */
+      height: 64px;
+      transition: background-color 0.3s, fill 0.3s;
+    }
+    .last-icon:hover svg {
+      background-color: white;
+      fill: black;
+     
+    }
+    .last-icon:hover p {
+      color: white;
+    }
+   
+  </style>
+</head>
+<body>
+  <div class="container text-center">
+    <h2 style="margin-top: 20%; color: white; margin-bottom: 50px;">Who's Watching?</h2>
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-2 profile-col">
+        <img src="../images/icon2.PNG" class="img-fluid" alt="Profile 1">
+        <p>M Adeel</p>
+      </div>
+      <div class="col-6 col-md-2 profile-col">
+        <img src="../images/man.png" class="img-fluid" alt="Profile 2">
+        <p>Adeel Person</p>
+      </div>
+      <div class="col-6 col-md-2 profile-col">
+        <img src="../images/icon.PNG" class="img-fluid" alt="Profile 3">
+        <p>Screen</p>
+      </div>
+      <div class="col-6 col-md-2 profile-col">
+        <img src="../images/kids.PNG" class="img-fluid" alt="Profile 4">
+        <p>Kids</p>
+      </div>
+      <div class="col-6 col-md-2 profile-col last-icon">
+        <svg style="margin-bottom: 50px;margin-top:30px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+        </svg>
+        <p>Add Profile</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
