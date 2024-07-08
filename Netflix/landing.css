@@ -81,10 +81,12 @@ i{
 .netflix-profile{
     width: 30px;
     height: 30px;
-    background-color: gray;
+    background-image: url("/netflix-clone/Netflix/images/boss2.png");
+    background-size: cover; /* Ensure the image covers the element */
     border-radius: 4px;
     margin-left: 20px;
     cursor: pointer;
+    z-index: 1;
 }
 .netflix-nav{
     display: block ;

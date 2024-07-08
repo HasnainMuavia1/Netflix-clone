@@ -1,3 +1,23 @@
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 100) {
+          $(".netflix-navbar").css("background" , "#0C0C0C");
+        }
+  
+        else{
+            $(".netflix-navbar").css("background" , "transparent");  	
+        }
+    });
+
+  })
+
+
+function position(id){
+  var card = document.getElementsByClassName('card')[id];
+  // card.style.transform = 'scale(1.5)';
+  console.log(id)
+}
 document.addEventListener('DOMContentLoaded', function() {
   const inputFieldEmail = document.getElementById('floatingInputGrid');
   const errorSpanEmail = document.getElementById('error1');
@@ -9,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (inputFieldEmail.value === '' || !isValidEmail(inputFieldEmail.value)) {
           errorSpanEmail.innerHTML = '<i class="far fa-times-circle"></i> Please enter a valid email or mobile number';
           errorSpanEmail.style.color = 'red';
+          errorSpanEmail.style.fontSize='14px'
           inputFieldEmail.style.borderColor = 'red'; // Set border color to red for error
       } else {
           errorSpanEmail.textContent = '';
@@ -21,6 +42,8 @@ document.addEventListener('DOMContentLoaded', function() {
       if (inputFieldPassword.value.length < 4 || inputFieldPassword.value.length > 60) {
           errorSpanPassword.innerHTML = '<i class="far fa-times-circle"></i> Please enter a valid password between 4 to 60 characters';
           errorSpanPassword.style.color = 'red';
+          errorSpanPassword.style.fontSize='14px'
+          
           
           inputFieldPassword.style.borderColor = 'red'; // Set border color to red for error
       } else {
