@@ -47,9 +47,9 @@
 }
 
 .premium-heading {
-  background-color: #333;
+  background-color: rgb(197, 31, 31);
   color: white;
-  border-top: 10px;
+  height:35px;
 }
 
 .standard-heading {
@@ -99,7 +99,7 @@
 
 li {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .gradient-text {
