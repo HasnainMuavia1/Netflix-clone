@@ -37,6 +37,7 @@
   border-radius: 10px;
   overflow: hidden; /* Prevent content overflow */
   cursor: pointer;
+  height: 100%;
 }
 
 .panel-heading {
