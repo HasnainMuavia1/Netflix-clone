@@ -1,4 +1,4 @@
-@media(max-width:767.98px){
+@media(max-width:500.98px){
     .netflix-padding-left{
         padding-left: 10px !important;
     }
@@ -77,4 +77,5 @@ button{
     
       margin-left: 0px !important;
 }
+
 }

@@ -13,11 +13,7 @@ $(document).ready(function(){
   })
 
 
-function position(id){
-  var card = document.getElementsByClassName('card')[id];
-  // card.style.transform = 'scale(1.5)';
-  console.log(id)
-}
+
 document.addEventListener('DOMContentLoaded', function() {
   const inputFieldEmail = document.getElementById('floatingInputGrid');
   const errorSpanEmail = document.getElementById('error1');
