@@ -1,4 +1,4 @@
-/* Custom CSS for Main Content and Main Block */
+    /* Custom CSS for Main Content and Main Block */
 .main-content {
   display: flex;
   justify-content: center;
@@ -20,14 +20,6 @@
   flex-wrap: wrap;
 }
 
-.col-md-3 {
-  flex: 1;
-  min-width: 280px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  position: relative; /* Ensure relative positioning for absolutely positioned elements */
-}
 
 .panel {
   flex: 1;
@@ -37,6 +29,7 @@
   border-radius: 10px;
   overflow: hidden; /* Prevent content overflow */
   cursor: pointer;
+  height: 100%;
 }
 
 .panel-heading {
@@ -83,9 +76,6 @@
 }
 
 /* Remove border on hover */
-.col-md-3:hover .panel {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
-}
 
 .text-center {
   background: linear-gradient(45deg, blue, purple, red);
@@ -134,3 +124,19 @@ p {
 
 /* Media query for medium and larger screens */
 /* Media query for screens larger than 1100px */
+
+    .ok-icon {
+            display: none; /* Hide initially */
+            color: white;
+            font-size: 1em;
+        }
+
+        .selected .ok-icon {
+            display: inline-block;
+            margin-left: 90%;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        } 
