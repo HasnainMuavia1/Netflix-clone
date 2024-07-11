@@ -12,20 +12,37 @@
 
     <link href="/Netflix-clone/Netflix/CSS/accounts_setting.css" rel="stylesheet">
     <link href="/Netflix-clone/Netflix/CSS/plans.css" rel="stylesheet">
-  
+    <style>
+        .ok-icon {
+            display: none; /* Hide initially */
+            color: white;
+            font-size: 1em;
+        }
+
+        .selected .ok-icon {
+            display: inline-block;
+            margin-left: 90%;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-light bg-white">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="../images/log.png" alt="Netflix Logo" class="d-inline-block align-text-top" style="width: 170px;">
-          </a>
-          <div class="ms-auto">
-            <a class="nav-link" href="#" style="font-size: 30px;color: black;">Sign out</a>
-          </div>
+            <a class="navbar-brand" href="#">
+                <img src="../images/log.png" alt="Netflix Logo" class="d-inline-block align-text-top" style="width: 170px;">
+            </a>
+            <div class="ms-auto">
+                <a class="nav-link" href="#" style="font-size: 30px; color: black;">Sign out</a>
+            </div>
         </div>
     </nav>
     <hr>
+    <!-- Main Content -->
     <div class="container-fluid mx-4">
       <h5 class="card-title" style="font-weight: lighter;">STEP <strong>1</strong> OF <strong>3</strong></h5>
     </div>
@@ -33,11 +50,10 @@
       <h1 style="font-size: 35px;">Choose the plan that’s right for you</h1>
     </div>
     
-    <!-- Main Content -->
     <div class="main-content">
         <div class="container-fluid">
             <div class="row px-3">
-                <div class="demo col-lg-3 col-md-6 col-sm-12 mb-4" onclick="selectPlan(this)">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4" onclick="selectPlan(this)">
                     <div class="panel-heading premium-heading text-center-gradient">
                         Most Popular
                     </div>
@@ -63,7 +79,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="demo col-lg-3 col-md-6 col-sm-12 mb-4" onclick="selectPlan(this)">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4" onclick="selectPlan(this)">
                     <div class="panel-heading text-center-gradient"></div>
                     <div class="panel panel-default">
                         <div class="panel-body">
@@ -85,7 +101,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="demo col-lg-3 col-md-6 col-sm-12 mb-4" onclick="selectPlan(this)">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4" onclick="selectPlan(this)">
                     <div class="panel-heading text-center-gradient"></div>
                     <div class="panel panel-default">
                         <div class="panel-body">
@@ -107,7 +123,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="demo col-lg-3 col-md-6 col-sm-12 mb-4" onclick="selectPlan(this)">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4" onclick="selectPlan(this)">
                     <div class="panel-heading text-center-gradient"></div>
                     <div class="panel panel-default">
                         <div class="panel-body">
@@ -129,53 +145,62 @@
                         </div>
                     </div>
                 </div>
-                <p style="font-size: 17px; text-align: left;"><br><br>HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our <a href="https://help.netflix.com/legal/termsofuse" style="color: blue;">Terms of Use</a> for more details.
+                <p style="font-size: 17px; text-align: left;">HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our <a href="https://help.netflix.com/legal/termsofuse" style="color: blue;">Terms of Use</a> for more details.
                 </p>
                 <p style="font-size: 17px; text-align: left;">Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard, and 1 with Basic and Mobile.
                 </p>
                 <a href="/Netflix-clone/Netflix/HTML/payment.html" class="btn btn-danger btn-block py-3" style="height: 60px; width: 40%; color: white;">Next</a>
             </div>
         </div>
-    </div> <br><br><br>
-   
-    <footer class="bg py-5" style="color: grey; ">
+    </div>
+  
+    <footer class="bg py-5" style="color: grey;">
         <div class="container-fluid">
-          <!-- Questions Section -->
-          <div class="mb-4">
-            <h5 class="mb-0" style="padding-left: 30px;">Questions? Contact us.</h5>
-          </div>
-          <!-- Footer Links Section -->
-          <div class="row" >
-            <div class="col-6 col-sm-6 col-md-3 mb-3" >
-              <ul class="list-unstyled" style="padding-left: 30px;">
-                <li><a href="faq.html" class="text-muted">FAQ</a></li>
-                <li><a href="privacy.html" class="text-muted">Privacy</a></li>
-              </ul>
+            <!-- Questions Section -->
+            <div class="mb-4">
+                <h5 class="mb-0" style="padding-left: 30px;">Questions? Contact us.</h5>
             </div>
-            <div class="col-6 col-sm-6 col-md-3 mb-3">
-              <ul class="list-unstyled" style="padding-left: 30px;">
-                <li><a href="help-center.html" class="text-muted">Help Center</a></li>
-                <li><a href="cookie-preferences.html" class="text-muted">Cookie Preferences</a></li>
-              </ul>
+            <!-- Footer Links Section -->
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-3 mb-3">
+                    <ul class="list-unstyled" style="padding-left: 30px;">
+                        <li><a href="faq.html" class="text-muted">FAQ</a></li>
+                        <li><a href="privacy.html" class="text-muted">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 mb-3">
+                    <ul class="list-unstyled" style="padding-left: 30px;">
+                        <li><a href="help-center.html" class="text-muted">Help Center</a></li>
+                        <li><a href="cookie-preferences.html" class="text-muted">Cookie Preferences</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 mb-3">
+                    <ul class="list-unstyled" style="padding-left: 30px;">
+                        <li><a href="netflix-shop.html" class="text-muted">Netflix Shop</a></li>
+                        <li><a href="corporate-info.html" class="text-muted">Corporate Information</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 mb-3">
+                    <ul class="list-unstyled" style="padding-left: 30px;">
+                        <li><a href="terms-of-use.html" class="text-muted">Terms of Use</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-6 col-sm-6 col-md-3 mb-3">
-              <ul class="list-unstyled" style="padding-left: 30px;">
-                <li><a href="netflix-shop.html" class="text-muted">Netflix Shop</a></li>
-                <li><a href="corporate-info.html" class="text-muted">Corporate Information</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-sm-6 col-md-3 mb-3">
-              <ul class="list-unstyled" style="padding-left: 30px;">
-                <li><a href="terms-of-use.html" class="text-muted">Terms of Use</a></li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </footer>
-      
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+    </footer>
+
+    <!-- JavaScript to handle selection -->
+    <script>
+        function selectPlan(selectedElement) {
+            // Remove 'selected' class from all cards
+            var cards = document.querySelectorAll('.col-lg-3, .col-md-6, .col-sm-12');
+            cards.forEach(function(card) {
+                card.classList.remove('selected');
+            });
+
+            // Add 'selected' class to the clicked card
+            selectedElement.classList.add('selected');
+        }
+    </script>
 </body>
 </html>
